@@ -4,7 +4,8 @@ var PORT = 8080;
 
 //chrome hard refresh - ctrl+shift+r
 
-var middleware = {
+var middleware = require('./middleware.js');
+/*var middleware = {
 	requireAuthentication: function (req, res, next) {
 		console.log('private route hit!');
 		next();
@@ -14,6 +15,7 @@ var middleware = {
 		next();
 	}
 };
+*/
 
 //app.use(middleware.requireAuthentication);
 app.use(middleware.logger);
