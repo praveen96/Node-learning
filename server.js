@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
-var PORT = 8080;
+//var PORT = 8080;
+var PORT = process.env.PORT || 3000;
 
 //chrome hard refresh - ctrl+shift+r
 
